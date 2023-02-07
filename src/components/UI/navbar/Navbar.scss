@@ -1,0 +1,16 @@
+nav{
+    height: 50px;
+    background:  linear-gradient(180deg, blue, black);;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    a{
+        text-decoration: none;
+        margin-inline: 10px;
+        color: white;
+    }
+    h2{
+        cursor: pointer;
+    }
+}
