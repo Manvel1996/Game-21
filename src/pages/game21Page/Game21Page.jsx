@@ -84,9 +84,9 @@ export default function Game21Page() {
             className="thinkingSmile"
             src={
               game21Level === 1
-                ? "../../public/thinking-easy.png"
+                ? "thinking-easy.png"
                 : game21Level === 2
-                ? "../../../../public/thinking-medium.png"
+                ? "thinking-medium.png"
                 : "thinking-hard.png"
             }
           />
