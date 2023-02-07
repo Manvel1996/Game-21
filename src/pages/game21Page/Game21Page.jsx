@@ -39,9 +39,11 @@ export default function Game21Page() {
       setTimeout(() => {
         const returnedNum = game21Logic(game21Level, game21Num + num);
         if (returnedNum >= 21) {
-          setWinLoseModal(true);
           setWinLoseModalText("You Win");
+          setWinLoseModal(true);
           setGame21Num(0);
+          setDisabled(false);
+          setThinkingSmile(false);
           setStartMebutton(false);
         } else {
           setGame21Num(returnedNum);
@@ -82,10 +84,10 @@ export default function Game21Page() {
             className="thinkingSmile"
             src={
               game21Level === 1
-                ? "../../../public/thinking-easy.png"
+                ? "../../public/thinking-easy.png"
                 : game21Level === 2
-                ? "../../../public/thinking-medium.png"
-                : "../../../public/thinking-hard.png"
+                ? "../../../../public/thinking-medium.png"
+                : "../public/thinking-hard.png"
             }
           />
         )}
